@@ -6,6 +6,9 @@ import {
 	signInWithPopup,
 	signOut,
 	onAuthStateChanged,
+	signInWithPhoneNumber,
+	RecaptchaVerifier,
+	PhoneAuthProvider,
 } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
@@ -23,4 +26,14 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 const provider = new GoogleAuthProvider();
 
-export { auth, provider, signInWithPopup, signOut, onAuthStateChanged, db };
+export {
+	auth,
+	provider,
+	signInWithPopup,
+	signOut,
+	onAuthStateChanged,
+	db,
+	signInWithPhoneNumber,
+	RecaptchaVerifier,
+	PhoneAuthProvider,
+};
